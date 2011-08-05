@@ -1,0 +1,317 @@
+<html>
+<head>
+
+<title>JSZenMenu - javascript menu - small yet powerful</title>
+	<script language="javascript" src="JSZenMenu.js"></script>
+	<script language="javascript" src="JSZenMenuItems.js"></script>
+	<script language="javascript" src="dynamicTheme.js"></script>
+	<link href="ZMDefaultTheme/theme.css" rel="stylesheet" type="text/css">
+	<link href="ZMSilverTheme/theme.css" rel="stylesheet" type="text/css">
+	<link href="ZMGoldTheme/theme.css" rel="stylesheet" type="text/css">
+	<link href="ZMWhiteTheme/theme.css" rel="stylesheet" type="text/css">
+	<link href="ZMBlackTheme/theme.css" rel="stylesheet" type="text/css">
+	<link href="ZMMiniGreenTheme/theme.css" rel="stylesheet" type="text/css">
+	<link href="ZMOfficeXPTheme/theme.css" rel="stylesheet" type="text/css">	
+	<link href="ZMOffice2003Theme/theme.css" rel="stylesheet" type="text/css">	
+	<link href="ZMSimpleGrayTheme/theme.css" rel="stylesheet" type="text/css">
+	<link href="ZMExampleTheme/theme.css" rel="stylesheet" type="text/css">
+	<meta name="description" content="JSZenMenu - javascript menu">
+	<meta name="keywords" content="javascript, menu">
+<style type="text/css">
+<!--
+.style1 {color: #33FF00}
+.style2 {
+	color: #FF0000;
+	font-weight: bold;
+}
+.style3 {color: #FF0000}
+.style4 {color: #339900}
+.style5 {
+	color: #336600;
+	font-weight: bold;
+}
+.style6 {color: #333333}
+-->
+</style></head>
+<body bgcolor="#EEEEEE">
+<div align="center">
+<table width="100%" border="0">
+ <tr>
+  <td colspan="2" align="center" bgcolor="#000000" style="border:1px solid #009900; cursor:pointer" onClick="location='http://jszenmenu.sourceforge.net'">
+  <img src="banner1.gif" alt="banner" /></td>
+ </tr>
+ <tr>
+  <td width="150px" rowspan="2" align="left" valign="top">
+	<div id="JSZenMenu"></div>      </td>
+  <td valign="top" style="width: 100%;"><p>&nbsp;</p></td>
+   </tr>
+ 
+ <tr>
+  <td valign="top">
+	<div id="JSZenMenu2" align="center">	</div>  </td>
+ </tr>
+ <tr>
+   <td valign="top" colspan="2" style="border:1px solid #009900; text-align:left; padding:5px 5px 5px 5px;"><p>&nbsp;</p>
+     <p><strong><a name="Introduction"></a>Introduction </strong></p>
+     <p>JSZenMenu is small (~ 7Kb compressed) and easy to use and customize:</p>
+     <ul>
+       <li> it can:</li>
+		 <ul>
+		   <li>be used vertically and horizontally;</li>
+         <li>load themes at runtime;</li>
+		  </ul>
+       <li>it supports:</li>
+		  <ul>
+		   <li>relative and absolute positioning;</li>
+         <li>multiple menus and multiple themes on the same page;</li>
+		   <li>the same title for multiple menu options</li>
+		  </ul>
+       <li>it is CSS customizable;</li>
+       </ul>
+     <p>&nbsp;</p>
+     <p><strong><a name="howtomenu"></a>How to</strong></p>
+     <p><strong>1. </strong>First, declare the menu in JSZenMenuItems.js :</p>
+     <blockquote>
+       <p>menu_name = generateMenu([ menuItem, menuItem, ... , menuItem ]);</p>
+       <p>where: <strong> menuItem</strong>=['title', 'link', 'description', 'target', 'path_to_icon_file', <strong>menuItem</strong>, ... , <strong>menuItem</strong>]</p>
+       <p>
+         <textarea name="textarea" rows="17" cols="90" readonly="readonly">mymenu=generateMenu([
+
+  ['MenuItem1', 'http://www.google.com', 'Link to Google', '_self', null,
+    // >> submenu >>
+    ['Submenu1Item1'],
+    ['Submenu1Item2'],
+    _split,
+    ['Title'],
+    ['Title'],
+    ['Title']
+    // << submenu <<
+  ],
+  _split,
+  ['MenuItem2'],
+  ['MenuItem3']
+
+]);</textarea>
+       </p>
+     </blockquote>
+     <blockquote>&nbsp;</blockquote>
+     <p><strong>2. </strong>Add  a &lt;DIV&gt; element in your webpage:</p>
+     <blockquote>
+       <p> &lt;body&gt;<br>&lt;div id='<strong>mymenuid</strong>'
+         &gt;&lt;/div&gt;<br>&lt;/body&gt;</p>
+     </blockquote>
+     <p><strong>3. </strong>Chose your theme (ex. ZMDefaultTheme) and add it into your webpage:</p>
+     <blockquote>
+       <p>&lt;head&gt;<br>
+         &lt;title&gt; &lt;/title&gt;<br>
+         &lt;script language=&quot;javascript&quot; src=&quot;<strong>JSZenMenu.js</strong>&quot;&gt;&lt;/script&gt;<br>
+         &lt;script language=&quot;javascript&quot; src=&quot;<strong>JSZenMenuItems.js</strong>&quot;&gt;&lt;/script&gt;<br>
+         &lt;link href=&quot;<strong><font color="red">ZMDefaultTheme/theme.css</font></strong>&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;<br>
+         &lt;/head&gt;</p>
+     </blockquote>     
+     <p><strong>4. </strong>Declare your menu like this:</p>
+     <blockquote>
+       <p><strong>createMenu(menu_name, 'div_id', 'menu_name', 'menu_theme', orientation, position);</strong></p>
+       <p>
+         <strong>orientation:</strong> <strong>0</strong> = horizontal, <strong>1</strong> =  vertical;<br>
+         <strong>position:</strong> <strong>'static'</strong> = relative positioning, <strong>'absolute'</strong> = absolute positioning. </p>
+       <p>&lt;body&gt;<br>&lt;div id=<strong>'mymenuid</strong>'&gt;&lt;/div&gt; <br>
+         &lt;script language=&quot;javascript&quot;&gt;<br>
+         <strong>createMenu(mymenu, 'mymenuid', 'mymenu', 'ZMDefaultTheme', 0, 'static');</strong><br>
+         &lt;/script&gt;<br>
+         &lt;/body&gt;</p>
+     </blockquote>     
+     <p><strong><a name="mymenu"></a>5. </strong>Run the menu:
+     <div id='mymenuid'></div>
+     <p><strong>6.</strong> Change the theme in <strong>theme_name/theme.css</strong> (ex. ZMDefaultTheme/theme.css) file if it is necessary:</p>
+     <p><img src="menucss.jpg" alt="menu css style" > </p>
+     <p><strong>7. </strong>For  changing the theme in runtime you must add<strong> dynamicTheme.js</strong>:</p>
+     <blockquote>
+       <p>&lt;head&gt;<br>
+&lt;title&gt; &lt;/title&gt;<br>
+&lt;script language=&quot;javascript&quot; src=&quot;<strong>JSZenMenu.js</strong>&quot;&gt;&lt;/script&gt;<br>
+&lt;script language=&quot;javascript&quot; src=&quot;<strong>JSZenMenuItems.js</strong>&quot;&gt;&lt;/script&gt;<br>&lt;script language=&quot;javascript&quot; src=&quot;<span class="style2">dynamicTheme.js</span>&quot;&gt;&lt;/script&gt;<br>
+&lt;link href=&quot;<strong>ZMDefaultTheme/theme.css</strong>&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;<br>
+&lt;/head&gt; </p>
+       <p>You can dynamically change the menu theme adding the corresponding themes:</p>
+       <p>&lt;head&gt;<br>
+&lt;title&gt; &lt;/title&gt;<br>
+&lt;script language=&quot;javascript&quot; src=&quot;JSZenMenu.js&quot;&gt;&lt;/script&gt;<br>
+&lt;script language=&quot;javascript&quot; src=&quot;JSZenMenuItems.js&quot;&gt;&lt;/script&gt;<br>
+&lt;script language=&quot;javascript&quot; src=&quot;<span class="style6">dynamicTheme.js</span>&quot;&gt;&lt;/script&gt;<br>
+&lt;link href=&quot;<strong>ZMDefaultTheme/theme.css</strong>&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;<br>&lt;link href=&quot;<strong>ZMMiniGreenTheme/theme.css</strong>&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;<br>&lt;link href=&quot;<strong>ZMOfficeXPTheme/theme.css</strong>&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;<br>
+&lt;/head&gt; </p>
+       <p>and the following line into your <strong>ur</strong><strong>l</strong>: <strong>menuname=menu_theme</strong>, for example: <strong>http://index.html?<span class="style3">mymenu=ZMMiniGreenTheme</span></strong></p>
+       <p><strong><span class="style3">mymenu=ZMMiniGreenTheme</span></strong> must be the last, ex: <strong>index.html?var1=val1&amp;var2=val2&amp;var3=val3&amp;<span class="style3">mymenu=ZMMiniGreenTheme</span></strong> </p>
+       <p>If you have an <span class="style5">anchor</span> : <strong>http://index.html?<span class="style3">mymenu=ZMMiniGreenTheme</span><span class="style4">#anchor_name</span></strong></p>
+       <p><strong><span class="style3"><a href="index.html?mymenu=ZMMiniGreenTheme#mymenu" target="_self">index.html?mymenu=ZMMiniGreenTheme</a></span></strong></p>
+       <p><a href="index.html?var1=val1&var2=val2&var3=val3&mymenu=ZMOfficeXPTheme#mymenu" target="_self"><strong>index.html?var1=val1&var2=val2&var3=val3&mymenu=ZMOfficeXPTheme</strong></a></p>
+       <p><strong><span class="style3"><a href="index.html?mymenu=ZMMiniGreenTheme#mymenu" target="_self">index.html?mymenu=ZMMiniGreenTheme#mymenu</a></span></strong></p>
+     </blockquote>
+		<p><b><br>8</b>. <b><a name="howtotheme"></a>Create a new theme</b></p>
+		<blockquote>
+		<p>-&nbsp;create&nbsp;the&nbsp;folder&nbsp;theme&nbsp;into&nbsp;the&nbsp;JSZenMenu&nbsp;folder:<b>&nbsp;ZMExampleTheme</b></p>
+		<p>-&nbsp;copy&nbsp;into&nbsp;the&nbsp;ZMExampleTheme&nbsp;folder&nbsp;the&nbsp;theme.css&nbsp;file&nbsp;from&nbsp;ZMDefaultTheme&nbsp;folder</p>
+		<p>-&nbsp;change&nbsp;into&nbsp;the&nbsp;<b>theme.css</b>&nbsp;file&nbsp;<b>ZMDefaultTheme</b>&nbsp;string with&nbsp;<b>ZMExampleTheme</b></p>
+		<p><img src="HowToImages/default-to-example-theme.png"></p>
+		<br><p>- copy <b>blank.gif, blankv.gif</b> from ZMDefaultTheme to ZMExampleTheme</p>
+		<p>- create new  icons (I used Gimp)<br><br>
+		<img src="HowToImages/create-new-image.png"><br><br><b>folder.gif</b><br>
+		<img src="HowToImages/folder.png"><br><b><br>arrowv.gif</b> (arrow for vertical menu)<br>
+		<img src="HowToImages/arrowv.png"><br><br><b>link.gif, arrowh.gif</b> are  similary created.</p>
+		<p> <b>menubgh.gif</b> (background for horizontal menu - width=1px, height=24px, or any other dimensions you need; for menubgv.gif rotate 90 degree menubgh.gif)<br><br>
+		<img src="HowToImages/menubgh.png"><br>
+		</p>
+		<p>
+		- into the <b>theme.css</b> file, change the values marked here with <font color="red">red</font> according to your theme (you can change the other values also):
+		</p>
+		<hr>
+		<div style="font-size:12px">
+/* ZMExampleTheme */<br><br>
+.ZMExampleThemeDIV {
+<blockquote>
+	position:absolute;<br>
+	visibility:hidden;<br>
+	overflow:hidden;
+	</blockquote>
+}
+<br>
+.ZMExampleThemeTABLE, .ZMExampleThemeTABLEV, .ZMExampleThemeTABLEH, .ZMExampleThemeTD {<br>
+<blockquote>
+	font-family:Verdana, Arial, Helvetica, sans-serif;<br>
+	font-size:12px;<br>
+	cursor:default;<br>
+	border:0;<br>
+	padding:0;<br>
+	margin:0;<br>
+	overflow:hidden;<br>
+	color:<font color="red">black</font>;<br>
+	</blockquote>
+}<br>
+
+/*
+ vertical menu
+*/
+<br>
+.ZMExampleThemeTDV {<blockquote>
+	background:url(menubgv.gif) repeat-y scroll 0%;<br>
+	background-position:left;<br>
+	background-color:<font color="red">#E1CAF1</font>;<br>
+	padding:1px 1px 1px 1px;<br>
+	border:1px solid <font color="red">blue</font>;<br>
+	overflow:hidden;
+	</blockquote>
+}<br>
+
+.ZMExampleThemeTDV1, .ZMExampleThemeTDV2, .ZMExampleThemeTDV3 {<blockquote>
+	background:url(menubgh.gif) repeat-x scroll 0%;<br>
+	/*background-color:D6FED7;*/<br>
+	border:1px solid <font color="red">blue</font>;<br>
+	white-space:nowrap;</blockquote>
+}<br>
+
+td.ZMExampleThemeTDV2 {<blockquote>
+	color:<font color="red">blue</font>;</blockquote>
+}
+<br>
+/*
+ horizontal menu
+*/<br>
+
+.ZMExampleThemeTDH {<blockquote>
+	/*background:url(menubgh.gif) repeat-x scroll 0%;*/
+	padding:0;<br>
+	margin:0;<br>
+	border:0;<br>
+	/*border:1px solid #99FF33;*/<br>
+	background-color:<font color="red">#FFE2BC</font>;<br>
+	overflow:hidden;</blockquote>
+}<br>
+
+.ZMExampleThemeTDH1, .ZMExampleThemeTDH2, .ZMExampleThemeTDH3 {<blockquote>
+	background:url(menubgh.gif) repeat-x scroll 0%;<br>
+	border:1px solid <font color="red">blue</font>;<br>
+	margin:0;<br>
+	padding:0;<br>
+	white-space:nowrap;</blockquote>
+}<br>
+
+td.ZMExampleThemeTDH2 {<blockquote>
+	color:<font color="red">red</font>;</blockquote>
+}<br>
+
+/*
+ menu items
+*/
+<br>
+.ZMExampleThemeTD1, .ZMExampleThemeTD2, .ZMExampleThemeTD3 {<blockquote>
+	padding:<font color="red">3px 2px 3px 2px</font>;<b>/* TOP, RIGHT, BOTTOM, LEFT */</b><br>
+	white-space:nowrap;</blockquote>
+}
+<br>
+.ZMExampleThemeTDV1, .ZMExampleThemeTDH1 {<blockquote>
+	border-right-width:0px;<br>
+	padding:<font color="red">2px 2px 2px 1px</font>;<b>/* TOP<font color="blue">-1</font>, RIGHT, BOTTOM<font color="blue">-1</font>, LEFT<font color="blue">-1</font> */</b></blockquote>
+}
+<br>
+.ZMExampleThemeTDV2, .ZMExampleThemeTDH2 {<blockquote>
+	border-left-width:0px;<br>
+	border-right-width:0px;<br>
+	padding:<font color="red">2px 2px 2px 2px</font>;<b>/* TOP-1, RIGHT, BOTTOM-1, LEFT */</b></blockquote>
+}
+<br>
+.ZMExampleThemeTDV3, .ZMExampleThemeTDH3 {<blockquote>
+	border-left-width:0px;<br>
+	padding:<font color="red">2px 1px 2px 2px</font>;<b>/* TOP-1, RIGHT-1, BOTTOM-1, LEFT */</b></blockquote>
+}
+<br>
+/*
+ splits
+*/
+<br>
+
+/* vertical */<br>
+.ZMExampleThemeSPLITV
+{<blockquote>
+	overflow:hidden;<br>
+	background-color:inherit;<br>
+	margin-top:1px;<br>
+	margin-left:2px;<br>
+	margin-right:2px;<br>
+	margin-bottom:0px;<br>
+	border-top:1px solid <font color="red">blue</font>;</blockquote>
+
+}
+<br>
+/* horizontal */<br>
+.ZMExampleThemeSPLITH
+{<blockquote>
+	overflow:hidden;<br>
+	background-color:inherit;<br>
+	color:<font color="red">blue</font>;<br>
+	margin:0;<br>
+	padding:0;<br>
+	border:0;</blockquote>
+}<br>
+
+
+		
+		</div>
+		<hr>
+		<a href="index.html?menu2=ZMExampleTheme"><font size="5" color="red">Load ZMExampleTheme</font></a></blockquote>
+		</td>
+ </tr>
+ <tr>
+   <td colspan="2" bgcolor="#000000" style="border:1px solid #009900; text-align:left; text-indent:15px; padding:5px 5px 5px 5px;"><div align="center"><span class="style1">JSZenMenu 2007</span></div></td>
+ </tr>
+</table>
+
+</div>
+<script language="javascript">
+	createMenu(menu1, "JSZenMenu", "menu1","ZMMiniGreenTheme");
+	createMenu(menu2/*menu_variable*/, "JSZenMenu2"/*div id*/, "menu2"/*menu_name = menu_variable*/,"ZMDefaultTheme"/*theme_path; null=ZMDefaultTheme*/,0/*0=horizontal, 1=vertical; null=vertical*/,'static'/*menu_position='absolute', 'static'; null='static'*/);
+	createMenu(mymenu, 'mymenuid', 'mymenu', 'ZMDefaultTheme', 0, 'static');
+
+</script>
+</body>
+</html>

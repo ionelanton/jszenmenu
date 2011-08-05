@@ -1,0 +1,124 @@
+/*
+ ZMSimpleGrayTheme
+*/
+
+.ZMSimpleGrayThemeDIV {
+	position:absolute;
+	visibility:hidden;
+	overflow:hidden;
+}
+
+.ZMSimpleGrayThemeTABLE, .ZMSimpleGrayThemeTABLEV, .ZMSimpleGrayThemeTABLEH, .ZMSimpleGrayThemeTD {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	cursor:default;
+	border:0;
+	padding:0;
+	margin:0;
+	overflow:hidden;
+	color:#676767;
+}
+
+/*
+ vertical menu
+*/
+
+.ZMSimpleGrayThemeTDV {
+	background-position:left;
+	background-color:#E1E1E1;
+	/*padding:1px 1px 1px 1px;*/
+	border:1px solid #676767;
+	overflow:hidden;
+}
+
+.ZMSimpleGrayThemeTDV1, .ZMSimpleGrayThemeTDV2, .ZMSimpleGrayThemeTDV3 {
+	/*background:url(menubgh.gif) repeat-x scroll 0%;*/
+	background-color:#676767;
+	border:1px solid #676767;
+	white-space:nowrap;
+}
+
+td.ZMSimpleGrayThemeTDV2 {
+	color:white;
+}
+
+/*
+ horizontal menu
+*/
+
+.ZMSimpleGrayThemeTDH {
+	/*background:url(menubgh.gif) repeat-x scroll 0%;*/
+	padding:0;
+	margin:0;
+	border:0;
+	/*border:1px solid #99FF33;*/
+	background-color:#E1E1E1;
+	overflow:hidden;
+}
+
+.ZMSimpleGrayThemeTDH1, .ZMSimpleGrayThemeTDH2, .ZMSimpleGrayThemeTDH3 {
+	/*background:url(menubgh.gif) repeat-x scroll 0%;*/
+	background-color:#676767;
+	border:1px solid #676767;
+	margin:0;
+	padding:0;
+	white-space:nowrap;
+}
+
+td.ZMSimpleGrayThemeTDH2 {
+	color:white;
+}
+
+/*
+ menu items
+*/
+
+.ZMSimpleGrayThemeTD1, .ZMSimpleGrayThemeTD2, .ZMSimpleGrayThemeTD3 {
+	padding:3px 2px 3px 3px;/* TOP, RIGHT, BOTTOM, LEFT */
+	white-space:nowrap;
+}
+
+.ZMSimpleGrayThemeTDV1, .ZMSimpleGrayThemeTDH1 {
+	border-right-width:0px;
+	padding:2px 2px 2px 2px;/* TOP-1, RIGHT, BOTTOM-1, LEFT-1 */
+}
+
+.ZMSimpleGrayThemeTDV2, .ZMSimpleGrayThemeTDH2 {
+	border-left-width:0px;
+	border-right-width:0px;
+	padding:2px 2px 2px 3px;/* TOP-1, RIGHT, BOTTOM-1, LEFT */
+}
+
+.ZMSimpleGrayThemeTDV3, .ZMSimpleGrayThemeTDH3 {
+	border-left-width:0px;
+	padding:2px 1px 2px 3px;/* TOP-1, RIGHT-1, BOTTOM-1, LEFT */
+}
+
+/*
+ splits
+*/
+
+/* vertical */
+.ZMSimpleGrayThemeSPLITV
+{
+	overflow:hidden;
+	background-color:inherit;
+	margin-top:1px;
+	margin-left:2px;
+	margin-right:2px;
+	margin-bottom:0px;
+	border-top:1px solid #676767;
+
+}
+
+/* horizontal */
+.ZMSimpleGrayThemeSPLITH
+{
+	overflow:hidden;
+	background-color:inherit;
+	color:#676767;
+	margin:0;
+	padding:0;
+	border:0;
+}
+

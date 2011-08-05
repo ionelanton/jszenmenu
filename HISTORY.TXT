@@ -1,0 +1,29 @@
+v.1.2.1
+ - white space bug in menu title fixed
+v.1.2.0
+ - support the same title for multiple menu options
+ - source code rewrited (it is intelligible now)
+ - menu() is now generateMenu() in JSZenMenuItems.js
+v.1.0.7
+ - menu declaration simplified;
+v.1.0.6
+ - UTF-8 compatible (convert the characters into the decimal form of Unicode numerical character references);
+v.1.0.5
+ - menu blinking bug fixed;
+v.1.0.4
+ - BSD licence changed to The MIT Licence;
+ - name of cookie.js file changed to dynamicTheme.js;
+ - the location of getTh() function is now dynamicTheme.js;
+ - structure of theme.css file changed;
+ - 'static' and 'absolute' option added for menu positioning;
+ - added wClient() function.
+v.1.0.3
+ - minor changes.
+v.1.0.2
+ - finterval() and playMenu() functions modified; 
+ - each menu has his own variable for setTimeout().
+v.1.0.1
+ - setCls() function modified;
+ - theme.css file changed. it is intelligible now.
+v.1.0
+ - first stable release.

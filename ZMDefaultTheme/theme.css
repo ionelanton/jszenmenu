@@ -1,0 +1,124 @@
+/*
+ ZMDefaultTheme
+*/
+
+.ZMDefaultThemeDIV {
+	position:absolute;
+	visibility:hidden;
+	overflow:hidden;
+}
+
+.ZMDefaultThemeTABLE, .ZMDefaultThemeTABLEV, .ZMDefaultThemeTABLEH, .ZMDefaultThemeTD {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	cursor:default;
+	border:0;
+	padding:0;
+	margin:0;
+	overflow:hidden;
+	color:#008800;
+}
+
+/*
+ vertical menu
+*/
+
+.ZMDefaultThemeTDV {
+	background:url(menubgv.gif) repeat-y scroll 0%;
+	background-position:left;
+	background-color:#DDFFCC;
+	padding:1px 1px 1px 1px;
+	border:1px solid #00AA00;
+	overflow:hidden;
+}
+
+.ZMDefaultThemeTDV1, .ZMDefaultThemeTDV2, .ZMDefaultThemeTDV3 {
+	background:url(menubgh.gif) repeat-x scroll 0%;
+	/*background-color:D6FED7;*/
+	border:1px solid #00AA00;
+	white-space:nowrap;
+}
+
+td.ZMDefaultThemeTDV2 {
+	color:black;
+}
+
+/*
+ horizontal menu
+*/
+
+.ZMDefaultThemeTDH {
+	/*background:url(menubgh.gif) repeat-x scroll 0%;*/
+	padding:0;
+	margin:0;
+	border:0;
+	/*border:1px solid #99FF33;*/
+	background-color:#DDFFCC;
+	overflow:hidden;
+}
+
+.ZMDefaultThemeTDH1, .ZMDefaultThemeTDH2, .ZMDefaultThemeTDH3 {
+	background:url(menubgh.gif) repeat-x scroll 0%;
+	border:1px solid #00AA00;
+	margin:0;
+	padding:0;
+	white-space:nowrap;
+}
+
+td.ZMDefaultThemeTDH2 {
+	color:black;
+}
+
+/*
+ menu items
+*/
+
+.ZMDefaultThemeTD1, .ZMDefaultThemeTD2, .ZMDefaultThemeTD3 {
+	padding:3px 2px 3px 2px;/* TOP, RIGHT, BOTTOM, LEFT */
+	white-space:nowrap;
+}
+
+.ZMDefaultThemeTDV1, .ZMDefaultThemeTDH1 {
+	border-right-width:0px;
+	padding:2px 2px 2px 1px;/* TOP-1, RIGHT, BOTTOM-1, LEFT-1 */
+}
+
+.ZMDefaultThemeTDV2, .ZMDefaultThemeTDH2 {
+	border-left-width:0px;
+	border-right-width:0px;
+	padding:2px 2px 2px 2px;/* TOP-1, RIGHT, BOTTOM-1, LEFT */
+}
+
+.ZMDefaultThemeTDV3, .ZMDefaultThemeTDH3 {
+	border-left-width:0px;
+	padding:2px 1px 2px 2px;/* TOP-1, RIGHT-1, BOTTOM-1, LEFT */
+}
+
+/*
+ splits
+*/
+
+/* vertical */
+.ZMDefaultThemeSPLITV
+{
+	overflow:hidden;
+	background-color:inherit;
+	margin-top:1px;
+	margin-left:2px;
+	margin-right:2px;
+	margin-bottom:0px;
+	border-top:1px solid #009900;
+
+}
+
+/* horizontal */
+.ZMDefaultThemeSPLITH
+{
+	overflow:hidden;
+	background-color:inherit;
+	color:#009900;
+	margin:0;
+	padding:0;
+	border:0;
+}
+

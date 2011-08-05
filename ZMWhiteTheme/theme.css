@@ -1,0 +1,125 @@
+/*
+ ZMWhiteTheme
+*/
+
+.ZMWhiteThemeDIV {
+	position:absolute;
+	visibility:hidden;
+	overflow:hidden;
+}
+
+.ZMWhiteThemeTABLE, .ZMWhiteThemeTABLEV, .ZMWhiteThemeTABLEH, .ZMWhiteThemeTD {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	cursor:default;
+	border:0;
+	padding:0;
+	margin:0;
+	overflow:hidden;
+	color:#AAAAAA;
+}
+
+/*
+ vertical menu
+*/
+
+.ZMWhiteThemeTDV {
+	/*background:url(menubgv.gif) repeat-y scroll 0%;
+	background-position:left;*/
+	background-color:#EEEEEE;
+	padding:1px 1px 1px 1px;
+	border:1px solid #AAAAAA;
+	overflow:hidden;
+}
+
+.ZMWhiteThemeTDV1, .ZMWhiteThemeTDV2, .ZMWhiteThemeTDV3 {
+	/*background:url(menubgh.gif) repeat-x scroll 0%;*/
+	background-color:#EEEEEE;
+	border:1px solid #AAAAAA;
+	white-space:nowrap;
+}
+
+td.ZMWhiteThemeTDV2 {
+	color:black;
+}
+
+/*
+ horizontal menu
+*/
+
+.ZMWhiteThemeTDH {
+	/*background:url(menubgh.gif) repeat-x scroll 0%;*/
+	padding:0;
+	margin:0;
+	border:0;
+	border:1px solid #AAAAAA;
+	background-color:#EEEEEE;
+	overflow:hidden;
+}
+
+.ZMWhiteThemeTDH1, .ZMWhiteThemeTDH2, .ZMWhiteThemeTDH3 {
+	/*background:url(menubgh.gif) repeat-x scroll 0%;*/
+	background-color:#EEEEEE;
+	border:1px solid #AAAAAA;
+	margin:0;
+	padding:0;
+	white-space:nowrap;
+}
+
+td.ZMWhiteThemeTDH2 {
+	color:black;
+}
+
+/*
+ menu items
+*/
+
+.ZMWhiteThemeTD1, .ZMWhiteThemeTD2, .ZMWhiteThemeTD3 {
+	padding:3px 2px 3px 2px;/* TOP, RIGHT, BOTTOM, LEFT */
+	white-space:nowrap;
+}
+
+.ZMWhiteThemeTDV1, .ZMWhiteThemeTDH1 {
+	border-right-width:0px;
+	padding:2px 2px 2px 1px;/* TOP-1, RIGHT, BOTTOM-1, LEFT-1 */
+}
+
+.ZMWhiteThemeTDV2, .ZMWhiteThemeTDH2 {
+	border-left-width:0px;
+	border-right-width:0px;
+	padding:2px 2px 2px 2px;/* TOP-1, RIGHT, BOTTOM-1, LEFT */
+}
+
+.ZMWhiteThemeTDV3, .ZMWhiteThemeTDH3 {
+	border-left-width:0px;
+	padding:2px 1px 2px 2px;/* TOP-1, RIGHT-1, BOTTOM-1, LEFT */
+}
+
+/*
+ splits
+*/
+
+/* vertical */
+.ZMWhiteThemeSPLITV
+{
+	overflow:hidden;
+	background-color:inherit;
+	margin-top:1px;
+	margin-left:2px;
+	margin-right:2px;
+	margin-bottom:0px;
+	border-top:1px solid #AAAAAA;
+
+}
+
+/* horizontal */
+.ZMWhiteThemeSPLITH
+{
+	overflow:hidden;
+	background-color:inherit;
+	color:#AAAAAA;
+	margin:0;
+	padding:0;
+	border:0;
+}
+

@@ -1,0 +1,123 @@
+/*
+ ZMOfficeXPTheme
+*/
+
+.ZMOfficeXPThemeDIV {
+	position:absolute;
+	visibility:hidden;
+	overflow:hidden;
+}
+
+.ZMOfficeXPThemeTABLE, .ZMOfficeXPThemeTABLEV, .ZMOfficeXPThemeTABLEH, .ZMOfficeXPThemeTD {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	cursor:default;
+	border:0;
+	padding:0;
+	margin:0;
+	overflow:hidden;
+	color:black;/*overrided by td.theme_name_TD*/
+}
+
+/*
+ vertical menu
+*/
+
+.ZMOfficeXPThemeTDV {
+	background:url(menubgv.gif) repeat-y scroll 0%;
+	background-position:left;
+	background-color:white;
+	padding:1px 1px 1px 1px;
+	border:1px solid #BBBBBB;
+	overflow:hidden;
+}
+
+.ZMOfficeXPThemeTDV1, .ZMOfficeXPThemeTDV2, .ZMOfficeXPThemeTDV3 {
+	background-color:#BDD6EF;
+	border:1px solid blue;
+	white-space:nowrap;
+}
+
+td.ZMOfficeXPThemeTDV2 {
+	color:black;
+}
+
+/*
+ horizontal menu
+*/
+
+.ZMOfficeXPThemeTDH {
+	background:url(menubgh.gif) repeat-x scroll 0%;
+	padding:0;
+	margin:0;
+	border:0;
+	/*border:1px solid #99FF33;*/
+	background-color:white;
+	overflow:hidden;
+}
+
+.ZMOfficeXPThemeTDH1, .ZMOfficeXPThemeTDH2, .ZMOfficeXPThemeTDH3 {
+	background-color:white;
+	border:1px solid #BBBBBB;
+	margin:0;
+	padding:0;
+	white-space:nowrap;
+}
+
+td.ZMOfficeXPThemeTDH2 {
+	color:black;
+}
+
+/*
+ menu items
+*/
+
+.ZMOfficeXPThemeTD1, .ZMOfficeXPThemeTD2, .ZMOfficeXPThemeTD3 {
+	padding:3px 1px 3px 5px;/* TOP, RIGHT, BOTTOM, LEFT */
+	white-space:nowrap;
+}
+
+.ZMOfficeXPThemeTDV1, .ZMOfficeXPThemeTDH1 {
+	border-right-width:0px;
+	padding:2px 1px 2px 4px;/* TOP-1, RIGHT, BOTTOM-1, LEFT-1 */
+}
+
+.ZMOfficeXPThemeTDV2, .ZMOfficeXPThemeTDH2 {
+	border-left-width:0px;
+	border-right-width:0px;
+	padding:2px 1px 2px 5px;/* TOP-1, RIGHT, BOTTOM-1, LEFT */
+}
+
+.ZMOfficeXPThemeTDV3, .ZMOfficeXPThemeTDH3 {
+	border-left-width:0px;
+	padding:2px 0px 2px 5px;/* TOP-1, RIGHT-1, BOTTOM-1, LEFT */
+}
+
+/*
+ splits
+*/
+
+/* vertical */
+.ZMOfficeXPThemeSPLITV
+{
+	overflow:hidden;
+	background-color:inherit;
+	margin-top:1px;
+	margin-left:2px;
+	margin-right:2px;
+	margin-bottom:0px;
+	border-top:1px solid #BBBBBB;
+
+}
+
+/* horizontal */
+.ZMOfficeXPThemeSPLITH
+{
+	overflow:hidden;
+	background-color:inherit;
+	color:#BBBBBB;
+	margin:0;
+	padding:0;
+	border:0;
+}
+

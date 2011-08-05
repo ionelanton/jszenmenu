@@ -1,0 +1,125 @@
+/*
+ ZMMiniGreenTheme
+*/
+
+.ZMMiniGreenThemeDIV {
+	position:absolute;
+	visibility:hidden;
+	overflow:hidden;
+}
+
+.ZMMiniGreenThemeTABLE, .ZMMiniGreenThemeTABLEV, .ZMMiniGreenThemeTABLEH, .ZMMiniGreenThemeTD {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:9px;
+	cursor:default;
+	border:0;
+	padding:0;
+	margin:0;
+	overflow:hidden;
+	color:#00AA00;
+}
+
+/*
+ vertical menu
+*/
+
+.ZMMiniGreenThemeTDV {
+	/*background:url(menubgv.gif) repeat-y scroll 0%;
+	background-position:left;*/
+	background-color:#CCFFBB;
+	padding:1px 1px 1px 1px;
+	border:1px solid #00AA00;
+	overflow:hidden;
+}
+
+.ZMMiniGreenThemeTDV1, .ZMMiniGreenThemeTDV2, .ZMMiniGreenThemeTDV3 {
+	/*background:url(menubgh.gif) repeat-x scroll 0%;*/
+	background-color:#DDFFCC;
+	border:1px solid #00AA00;
+	white-space:nowrap;
+}
+
+td.ZMMiniGreenThemeTDV2 {
+	color: #008800;
+}
+
+/*
+ horizontal menu
+*/
+
+.ZMMiniGreenThemeTDH {
+	/*background:url(menubgh.gif) repeat-x scroll 0%;*/
+	padding:0;
+	margin:0;
+	border:0;
+	/*border:1px solid #99FF33;*/
+	background-color:#CCFFBB;
+	overflow:hidden;
+}
+
+.ZMMiniGreenThemeTDH1, .ZMMiniGreenThemeTDH2, .ZMMiniGreenThemeTDH3 {
+	/*background:url(menubgh.gif) repeat-x scroll 0%;*/
+	background-color:#00AA00;
+	border:1px solid #00AA00;
+	margin:0;
+	padding:0;
+	white-space:nowrap;
+}
+
+td.ZMMiniGreenThemeTDH2 {
+	color:white;
+}
+
+/*
+ menu items
+*/
+
+.ZMMiniGreenThemeTD1, .ZMMiniGreenThemeTD2, .ZMMiniGreenThemeTD3 {
+	padding:3px 2px 3px 2px;/* TOP, RIGHT, BOTTOM, LEFT */
+	white-space:nowrap;
+}
+
+.ZMMiniGreenThemeTDV1, .ZMMiniGreenThemeTDH1 {
+	border-right-width:0px;
+	padding:2px 2px 2px 1px;/* TOP-1, RIGHT, BOTTOM-1, LEFT-1 */
+}
+
+.ZMMiniGreenThemeTDV2, .ZMMiniGreenThemeTDH2 {
+	border-left-width:0px;
+	border-right-width:0px;
+	padding:2px 2px 2px 2px;/* TOP-1, RIGHT, BOTTOM-1, LEFT */
+}
+
+.ZMMiniGreenThemeTDV3, .ZMMiniGreenThemeTDH3 {
+	border-left-width:0px;
+	padding:2px 1px 2px 2px;/* TOP-1, RIGHT-1, BOTTOM-1, LEFT */
+}
+
+/*
+ splits
+*/
+
+/* vertical */
+.ZMMiniGreenThemeSPLITV
+{
+	overflow:hidden;
+	background-color:inherit;
+	margin-top:1px;
+	margin-left:2px;
+	margin-right:2px;
+	margin-bottom:0px;
+	border-top:1px solid #009900;
+
+}
+
+/* horizontal */
+.ZMMiniGreenThemeSPLITH
+{
+	overflow:hidden;
+	background-color:inherit;
+	color:#009900;
+	margin:0;
+	padding:0;
+	border:0;
+}
+

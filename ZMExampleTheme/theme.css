@@ -1,0 +1,124 @@
+/*
+ ZMExampleTheme
+*/
+
+.ZMExampleThemeDIV {
+	position:absolute;
+	visibility:hidden;
+	overflow:hidden;
+}
+
+.ZMExampleThemeTABLE, .ZMExampleThemeTABLEV, .ZMExampleThemeTABLEH, .ZMExampleThemeTD {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	cursor:default;
+	border:0;
+	padding:0;
+	margin:0;
+	overflow:hidden;
+	color:black;
+}
+
+/*
+ vertical menu
+*/
+
+.ZMExampleThemeTDV {
+	background:url(menubgv.gif) repeat-y scroll 0%;
+	background-position:left;
+	background-color:#E1CAF1;
+	padding:1px 1px 1px 1px;
+	border:1px solid blue;
+	overflow:hidden;
+}
+
+.ZMExampleThemeTDV1, .ZMExampleThemeTDV2, .ZMExampleThemeTDV3 {
+	background:url(menubgh.gif) repeat-x scroll 0%;
+	/*background-color:D6FED7;*/
+	border:1px solid blue;
+	white-space:nowrap;
+}
+
+td.ZMExampleThemeTDV2 {
+	color:blue;
+}
+
+/*
+ horizontal menu
+*/
+
+.ZMExampleThemeTDH {
+	/*background:url(menubgh.gif) repeat-x scroll 0%;*/
+	padding:0;
+	margin:0;
+	border:0;
+	/*border:1px solid #99FF33;*/
+	background-color:#FFE2BC;
+	overflow:hidden;
+}
+
+.ZMExampleThemeTDH1, .ZMExampleThemeTDH2, .ZMExampleThemeTDH3 {
+	background:url(menubgh.gif) repeat-x scroll 0%;
+	border:1px solid blue;
+	margin:0;
+	padding:0;
+	white-space:nowrap;
+}
+
+td.ZMExampleThemeTDH2 {
+	color:red;
+}
+
+/*
+ menu items
+*/
+
+.ZMExampleThemeTD1, .ZMExampleThemeTD2, .ZMExampleThemeTD3 {
+	padding:3px 2px 3px 2px;/* TOP, RIGHT, BOTTOM, LEFT */
+	white-space:nowrap;
+}
+
+.ZMExampleThemeTDV1, .ZMExampleThemeTDH1 {
+	border-right-width:0px;
+	padding:2px 2px 2px 1px;/* TOP-1, RIGHT, BOTTOM-1, LEFT-1 */
+}
+
+.ZMExampleThemeTDV2, .ZMExampleThemeTDH2 {
+	border-left-width:0px;
+	border-right-width:0px;
+	padding:2px 2px 2px 2px;/* TOP-1, RIGHT, BOTTOM-1, LEFT */
+}
+
+.ZMExampleThemeTDV3, .ZMExampleThemeTDH3 {
+	border-left-width:0px;
+	padding:2px 1px 2px 2px;/* TOP-1, RIGHT-1, BOTTOM-1, LEFT */
+}
+
+/*
+ splits
+*/
+
+/* vertical */
+.ZMExampleThemeSPLITV
+{
+	overflow:hidden;
+	background-color:inherit;
+	margin-top:1px;
+	margin-left:2px;
+	margin-right:2px;
+	margin-bottom:0px;
+	border-top:1px solid blue;
+
+}
+
+/* horizontal */
+.ZMExampleThemeSPLITH
+{
+	overflow:hidden;
+	background-color:inherit;
+	color:blue;
+	margin:0;
+	padding:0;
+	border:0;
+}
+

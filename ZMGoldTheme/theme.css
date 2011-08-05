@@ -1,0 +1,124 @@
+/*
+ ZMGoldTheme
+*/
+
+.ZMGoldThemeDIV {
+	position:absolute;
+	visibility:hidden;
+	overflow:hidden;
+}
+
+.ZMGoldThemeTABLE, .ZMGoldThemeTABLEV, .ZMGoldThemeTABLEH, .ZMGoldThemeTD {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	cursor:default;
+	border:0;
+	padding:0;
+	margin:0;
+	overflow:hidden;
+	color:#7A6113;
+}
+
+/*
+ vertical menu
+*/
+
+.ZMGoldThemeTDV {
+	background:url(menubgv.gif) repeat-y scroll 0%;
+	background-position:left;
+	background-color:#F3E96F;
+	padding:1px 1px 1px 1px;
+	border:1px solid #7A6113;
+	overflow:hidden;
+}
+
+.ZMGoldThemeTDV1, .ZMGoldThemeTDV2, .ZMGoldThemeTDV3 {
+	/*background:url(menubgh.gif) repeat-x scroll 0%;*/
+	background-color:#FFFF99;
+	border:1px solid #7A6113;
+	white-space:nowrap;
+}
+
+td.ZMGoldThemeTDV2 {
+	color:black;
+}
+
+/*
+ horizontal menu
+*/
+
+.ZMGoldThemeTDH {
+	/*background:url(menubgh.gif) repeat-x scroll 0%;*/
+	padding:0;
+	margin:0;
+	border:0;
+	/*border:1px solid #99FF33;*/
+	background-color:#F3E96F;
+	overflow:hidden;
+}
+
+.ZMGoldThemeTDH1, .ZMGoldThemeTDH2, .ZMGoldThemeTDH3 {
+	background:url(menubgh.gif) repeat-x scroll 0%;
+	border:1px solid #7A6113;
+	margin:0;
+	padding:0;
+	white-space:nowrap;
+}
+
+td.ZMGoldThemeTDH2 {
+	color:black;
+}
+
+/*
+ menu items
+*/
+
+.ZMGoldThemeTD1, .ZMGoldThemeTD2, .ZMGoldThemeTD3 {
+	padding:3px 2px 3px 3px;/* TOP, RIGHT, BOTTOM, LEFT */
+	white-space:nowrap;
+}
+
+.ZMGoldThemeTDV1, .ZMGoldThemeTDH1 {
+	border-right-width:0px;
+	padding:2px 2px 2px 2px;/* TOP-1, RIGHT, BOTTOM-1, LEFT-1 */
+}
+
+.ZMGoldThemeTDV2, .ZMGoldThemeTDH2 {
+	border-left-width:0px;
+	border-right-width:0px;
+	padding:2px 2px 2px 3px;/* TOP-1, RIGHT, BOTTOM-1, LEFT */
+}
+
+.ZMGoldThemeTDV3, .ZMGoldThemeTDH3 {
+	border-left-width:0px;
+	padding:2px 1px 2px 3px;/* TOP-1, RIGHT-1, BOTTOM-1, LEFT */
+}
+
+/*
+ splits
+*/
+
+/* vertical */
+.ZMGoldThemeSPLITV
+{
+	overflow:hidden;
+	background-color:inherit;
+	margin-top:1px;
+	margin-left:2px;
+	margin-right:2px;
+	margin-bottom:0px;
+	border-top:1px solid #7A6113;
+
+}
+
+/* horizontal */
+.ZMGoldThemeSPLITH
+{
+	overflow:hidden;
+	background-color:inherit;
+	color:#7A6113;
+	margin:0;
+	padding:0;
+	border:0;
+}
+

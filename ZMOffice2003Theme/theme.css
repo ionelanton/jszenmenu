@@ -1,0 +1,123 @@
+/*
+ ZMOffice2003Theme
+*/
+
+.ZMOffice2003ThemeDIV {
+	position:absolute;
+	visibility:hidden;
+	overflow:hidden;
+}
+
+.ZMOffice2003ThemeTABLE, .ZMOffice2003ThemeTABLEV, .ZMOffice2003ThemeTABLEH, .ZMOffice2003ThemeTD {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	cursor:default;
+	border:0;
+	padding:0;
+	margin:0;
+	overflow:hidden;
+	color:black;
+}
+
+/*
+ vertical menu
+*/
+
+.ZMOffice2003ThemeTDV {
+	background:url(menubgv.gif) repeat-y scroll 0%;
+	background-position:left;
+	background-color:white;
+	padding:1px 1px 1px 1px;
+	border:1px solid #333333;
+	overflow:hidden;
+}
+
+.ZMOffice2003ThemeTDV1, .ZMOffice2003ThemeTDV2, .ZMOffice2003ThemeTDV3 {
+	background-color:#B6BDD2;
+	border:1px solid black;
+	white-space:nowrap;
+}
+
+td.ZMOffice2003ThemeTDV2 {
+	color:black;
+}
+
+/*
+ horizontal menu
+*/
+
+.ZMOffice2003ThemeTDH {
+	background:url(menubgh.gif) repeat-x scroll 0%;
+	padding:0;
+	margin:0;
+	border:0;
+	/*border:1px solid #99FF33;*/
+	background-color:white;
+	overflow:hidden;
+}
+
+.ZMOffice2003ThemeTDH1, .ZMOffice2003ThemeTDH2, .ZMOffice2003ThemeTDH3 {
+	background-color:white;
+	border:1px solid #333333;
+	margin:0;
+	padding:0;
+	white-space:nowrap;
+}
+
+td.ZMOffice2003ThemeTDH2 {
+	color:black;
+}
+
+/*
+ menu items
+*/
+
+.ZMOffice2003ThemeTD1, .ZMOffice2003ThemeTD2, .ZMOffice2003ThemeTD3 {
+	padding:3px 1px 3px 5px;/* TOP, RIGHT, BOTTOM, LEFT */
+	white-space:nowrap;
+}
+
+.ZMOffice2003ThemeTDV1, .ZMOffice2003ThemeTDH1 {
+	border-right-width:0px;
+	padding:2px 1px 2px 4px;/* TOP-1, RIGHT, BOTTOM-1, LEFT-1 */
+}
+
+.ZMOffice2003ThemeTDV2, .ZMOffice2003ThemeTDH2 {
+	border-left-width:0px;
+	border-right-width:0px;
+	padding:2px 1px 2px 5px;/* TOP-1, RIGHT, BOTTOM-1, LEFT */
+}
+
+.ZMOffice2003ThemeTDV3, .ZMOffice2003ThemeTDH3 {
+	border-left-width:0px;
+	padding:2px 0px 2px 5px;/* TOP-1, RIGHT-1, BOTTOM-1, LEFT */
+}
+
+/*
+ splits
+*/
+
+/* vertical */
+.ZMOffice2003ThemeSPLITV
+{
+	overflow:hidden;
+	background-color:inherit;
+	margin-top:1px;
+	margin-left:2px;
+	margin-right:2px;
+	margin-bottom:0px;
+	border-top:1px solid #BBBBBB;
+
+}
+
+/* horizontal */
+.ZMOffice2003ThemeSPLITH
+{
+	overflow:hidden;
+	background-color:inherit;
+	color:#BBBBBB;
+	margin:0;
+	padding:0;
+	border:0;
+}
+
